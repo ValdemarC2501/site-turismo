@@ -1,0 +1,239 @@
+/* ========================================
+   TURISMO FOZ - DESTINOS
+   ======================================== */
+
+/* GRID DE DESTINOS */
+/* ===== SEÇÃO DESTINOS ===== */
+#destinos {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    margin: 20px 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.destination-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    height: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-image {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.destination-card:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-overlay i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.card-content {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 30px;
+    width: 100%;
+    color: white;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.card-specifications {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-specifications h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #00d4ff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spec-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.spec-list li i {
+    color: #00d4ff;
+    width: 16px;
+    text-align: center;
+}
+
+/* Imagens específicas para cada destino - ORGANIZADAS CORRETAMENTE */
+/* Card 1: Cataratas do Iguaçu */
+.destination-card:nth-child(1) .card-image { 
+    background-image: url('../images/Cataratas-do-Iguacu-5.jpg'); 
+}
+
+/* Card 2: Marco das Três Fronteiras */
+.destination-card:nth-child(2) .card-image { 
+    background-image: url('../images/1923-showdeluzesemfozdoiguacu.webp'); 
+}
+
+/* Card 3: Usina de Itaipu */
+.destination-card:nth-child(3) .card-image { 
+    background-image: url('../images/alexandre-marchettiitaipu-binacional-itaipu.webp'); 
+}
+
+/* Card 4: City Tour Foz do Iguaçu */
+.destination-card:nth-child(4) .card-image { 
+    background-image: url('../images/City_Tour_Foz_do_Iguacu.webp'); 
+}
+
+/* Card 5: Compras no Paraguai */
+.destination-card:nth-child(5) .card-image { 
+    background-image: url('../images/compras-no-paraguai.jpg'); 
+}
+
+/* Card 6: Yup Star Roda Gigante */
+.destination-card:nth-child(6) .card-image { 
+    background-image: url('../images/Yup-Star-1.jpg'); 
+}
+
+/* Card 7: Vale dos Dinossauros */
+.destination-card:nth-child(7) .card-image { 
+    background-image: url('../images/parque-dos-dinossauros-foz-do-iguacu-640w.webp'); 
+}
+
+/* Card 8: Helicóptero - Helisul */
+.destination-card:nth-child(8) .card-image { 
+    background-image: url('../images/8c.jpg'); 
+}
+
+/* Card 9: Marco Argentino - Cataratas */
+.destination-card:nth-child(9) .card-image { 
+    background-image: url('../images/cataratas-iguazu-excursao-argentina.jpg'); 
+}
+
+/* Card 10: Macuco Safari */
+.destination-card:nth-child(10) .card-image { 
+    background-image: url('../images/1946-passeiodebarcoemfoz.webp'); 
+}
+
+/* Card 11: Movie Cars */
+.destination-card:nth-child(11) .card-image { 
+    background-image: url('../images/fachada-do-museu-de-cera.jpg'); 
+}
+
+/* Card 12: Parque das Aves */
+.destination-card:nth-child(12) .card-image { 
+    background-image: url('../images/Entrada-nova-do-Parque-das-Aves.jpg'); 
+}
+
+/* Card 13: Katamaran Foz */
+.destination-card:nth-child(13) .card-image { 
+    background-image: url('../images/2576805351.jpg'); 
+}
+
+/* Card 14: Feirinha de Puerto Iguazu */
+.destination-card:nth-child(14) .card-image { 
+    background-image: url('../images/puerto-iguazu-fronteira-brasil-argentina-1024x768.webp'); 
+}
+
+/* Card 15: Jantar em Puerto Iguazu */
+.destination-card:nth-child(15) .card-image { 
+    background-image: url('../images/puerto-iguazu-fronteira-brasil-argentina-1024x768.webp'); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .destination-card {
+        height: 350px;
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+    
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card-specifications {
+        padding: 15px;
+    }
+}

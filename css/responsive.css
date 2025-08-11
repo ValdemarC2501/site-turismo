@@ -1,0 +1,120 @@
+/* ========================================
+   TURISMO FOZ - RESPONSIVIDADE
+   ======================================== */
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        top: 10px;
+        width: calc(100% - 20px);
+        padding: 15px 20px;
+        border-radius: 20px;
+    }
+    
+    .logo span {
+        font-size: 1.8rem;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .hero {
+        margin: 2px;
+        border-radius: 20px;
+    }
+    
+    .hero-highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .modal-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        top: 5px;
+        width: calc(100% - 10px);
+        padding: 12px 15px;
+    }
+    
+    .logo i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    
+    .logo span {
+        font-size: 1.5rem;
+    }
+    
+    .hero-badge {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .stat-item {
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .guides-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
